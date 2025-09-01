@@ -19,7 +19,7 @@ Steam multiblocks such as the Steam Grinder and Steam Oven use this class.
             .machine((holder) => new $SteamMulti(holder, 4))
             // The number in holder is the max amount of parallel it can use.
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeTypes(GTRecipeTypes.get('compressor'))
+            .recipeType('compressor')
             .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("BCCCB", "BBCBB", "BBCBB", "BBBBB", "BBBBB")
@@ -42,6 +42,17 @@ Steam multiblocks such as the Steam Grinder and Steam Oven use this class.
                 "gtceu:block/machines/compressor")
     })
     ```
+
+
+```
+### Recipe map
+Use code for new MB
+    .recipeType('your_recipe')  
+Or use this code for existing machines: 
+    .recipeTypes(GTRecipeTypes.get('compressor'))
+See the code here
+https://github.com/GregTechCEu/GregTech-Modern/blob/a69bcc80e45c1fbeb910dc65124463bc6c67b60f/src/main/java/com/gregtechceu/gtceu/common/data/GTRecipeTypes.java#L193
+```
 
 === "Java"
     ```java
