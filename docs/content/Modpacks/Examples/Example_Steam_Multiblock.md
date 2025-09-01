@@ -46,11 +46,11 @@ Steam multiblocks such as the Steam Grinder and Steam Oven use this class.
 
 ```
 ### Recipe map
-Use code for new MB
+Use code for new MB:
     .recipeType('your_recipe')  
 Or use this code for existing machines: 
     .recipeTypes(GTRecipeTypes.get('compressor'))
-See the code here
+See the code here:
 https://github.com/GregTechCEu/GregTech-Modern/blob/a69bcc80e45c1fbeb910dc65124463bc6c67b60f/src/main/java/com/gregtechceu/gtceu/common/data/GTRecipeTypes.java#L193
 ```
 
